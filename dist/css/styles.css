@@ -1,0 +1,44 @@
+header .logo {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+header .navigation {
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+header .navigation ul li {
+  display: inline;
+  margin-right: 30px;
+}
+
+header .navigation ul li button {
+  border: 0;
+  background-color: white;
+  border-radius: 20px;
+  height: 40px;
+  width: 100px;
+}
+
+header .navigation ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header h1.creatives-text {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  color: white;
+}
+
+header .downwards-arrow {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  color: white;
+}
+/*# sourceMappingURL=styles.css.map */
