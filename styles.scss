@@ -1,3 +1,4 @@
+
 header {
     .logo{
         position:absolute;
@@ -22,6 +23,11 @@ header {
                     border-radius: 20px;
                     height: 40px;
                     width: 100px;
+
+                    &:hover{
+                        background-color:#6FCFFF;
+                        color:white;
+                    }
                 }
                 a{
                     color:white;
@@ -43,5 +49,142 @@ header {
         top: 45%;
         left: 50%;
         color: white;
+    }
+}
+
+.row{
+    .col-md-6, .col-md-3 {
+        padding: 0;
+    }
+    .image-text{
+        padding: 25% 25% 15% 25%;
+
+        h2 {
+            font-weight: bold;
+        }
+        
+        p{
+            margin-top: 50px;
+        }
+
+        h4 {
+            border-bottom: 10px solid #ffd202;
+            width: 150px;
+            line-height: 10px;
+            border-bottom-left-radius: 7px;
+            border-bottom-right-radius: 7px;
+            margin-top: 50px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .photography, .graphic-design{
+        position:relative;
+    }
+
+    h4.graphic-design-title, h4.photography-title{
+        position:absolute;
+        bottom: 30%;
+        left: 40%;
+        letter-spacing: 2px;
+    }
+
+    h4.photography-title, p.photography-text{
+        color: #165169;
+    }
+
+    h4.graphic-design-title, p.graphic-design-text{
+        color:#26574E;
+    }
+
+    p.photography-text, p.graphic-design-text{
+        position: absolute;
+        padding-right: 30%;
+        bottom: 5%;
+        left: 40%;
+    }
+
+}
+
+.row.testimonials{
+    padding: 10% 15%;
+    h4.testimonials {
+        text-align: center;
+        letter-spacing: 2px;
+        color:#A8A8A8;
+        margin-bottom: 5%;
+    }
+
+    img {
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    p.testimonials-description {
+        text-align: center;
+        padding: 30px 0;
+    }
+
+    p.testimonials-name {
+        text-align: center;
+        font-weight: bold;
+    }
+
+    p.testimonials-job {
+        font-size: 11px;
+        text-align: center;
+        color: gray;
+    }
+}
+
+.footer{
+    background-color:#90D4C5;
+    color:#307769;
+
+    h4 {
+        text-align: center;
+        font-weight: bold;
+        padding: 50px 0;
+    }
+
+    .footer-navigation{
+        text-align: center;
+        ul{
+            li{
+                display:inline;
+                margin: 20px;
+
+                a {
+                    color: #307769;
+                    text-align: white;
+                    text-decoration: none;
+
+                    &:hover{
+                        color:white;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-icons{
+        text-align: center;
+        margin: 50px 0;
+    }
+    ul{
+        li{
+            display:inline;
+            margin:10px;
+
+            img:hover{
+                cursor: pointer;
+                background-color: white;
+            }
+        }
     }
 }

@@ -23,6 +23,11 @@ header .navigation ul li button {
   width: 100px;
 }
 
+header .navigation ul li button:hover {
+  background-color: #6FCFFF;
+  color: white;
+}
+
 header .navigation ul li a {
   color: white;
   text-decoration: none;
@@ -40,5 +45,139 @@ header .downwards-arrow {
   top: 45%;
   left: 50%;
   color: white;
+}
+
+.row .col-md-6, .row .col-md-3 {
+  padding: 0;
+}
+
+.row .image-text {
+  padding: 25% 25% 15% 25%;
+}
+
+.row .image-text h2 {
+  font-weight: bold;
+}
+
+.row .image-text p {
+  margin-top: 50px;
+}
+
+.row .image-text h4 {
+  border-bottom: 10px solid #ffd202;
+  width: 150px;
+  line-height: 10px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  margin-top: 50px;
+}
+
+.row .image-text h4:hover {
+  cursor: pointer;
+}
+
+.row .photography, .row .graphic-design {
+  position: relative;
+}
+
+.row h4.graphic-design-title, .row h4.photography-title {
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  letter-spacing: 2px;
+}
+
+.row h4.photography-title, .row p.photography-text {
+  color: #165169;
+}
+
+.row h4.graphic-design-title, .row p.graphic-design-text {
+  color: #26574E;
+}
+
+.row p.photography-text, .row p.graphic-design-text {
+  position: absolute;
+  padding-right: 30%;
+  bottom: 5%;
+  left: 40%;
+}
+
+.row.testimonials {
+  padding: 10% 15%;
+}
+
+.row.testimonials h4.testimonials {
+  text-align: center;
+  letter-spacing: 2px;
+  color: #A8A8A8;
+  margin-bottom: 5%;
+}
+
+.row.testimonials img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row.testimonials p.testimonials-description {
+  text-align: center;
+  padding: 30px 0;
+}
+
+.row.testimonials p.testimonials-name {
+  text-align: center;
+  font-weight: bold;
+}
+
+.row.testimonials p.testimonials-job {
+  font-size: 11px;
+  text-align: center;
+  color: gray;
+}
+
+.footer {
+  background-color: #90D4C5;
+  color: #307769;
+}
+
+.footer h4 {
+  text-align: center;
+  font-weight: bold;
+  padding: 50px 0;
+}
+
+.footer .footer-navigation {
+  text-align: center;
+}
+
+.footer .footer-navigation ul li {
+  display: inline;
+  margin: 20px;
+}
+
+.footer .footer-navigation ul li a {
+  color: #307769;
+  text-align: white;
+  text-decoration: none;
+}
+
+.footer .footer-navigation ul li a:hover {
+  color: white;
+}
+
+.footer .social-icons {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 10px;
+}
+
+.footer ul li img:hover {
+  cursor: pointer;
+  background-color: white;
 }
 /*# sourceMappingURL=styles.css.map */
