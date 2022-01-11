@@ -88,7 +88,7 @@ header {
     h4.graphic-design-title, h4.photography-title{
         position:absolute;
         bottom: 30%;
-        left: 40%;
+        left: 35%;
         letter-spacing: 2px;
     }
 
@@ -102,9 +102,9 @@ header {
 
     p.photography-text, p.graphic-design-text{
         position: absolute;
-        padding-right: 30%;
+        padding: 0 20%;
         bottom: 5%;
-        left: 40%;
+        text-align: center;
     }
 
 }
