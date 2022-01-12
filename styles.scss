@@ -1,12 +1,55 @@
-
 header {
+    position:relative;
+    .menu-btn-mobile{
+        position:absolute;
+        z-index: 1;
+        right: 30px;
+        top:30px;
+        height:20px;
+        width:28px;
+        cursor: pointer;
+        display:none;
+    
+        &_burger{
+            position:absolute;
+            right:0;
+            top:0.5rem;
+            width:28px;
+            height:3px;
+            background-color: white;
+    
+            //the below creates the top and bottom burger elements
+            &::before{
+                content: '';
+                position:absolute;
+                top: -8px;
+                width:28px;
+                height:3px;
+                background-color: white;
+            }
+    
+            &::after{
+                content: '';
+                position:absolute;
+                top: 8px;
+                width:28px;
+                height:3px;
+                background-color: white;
+            }
+        }
+    }
+
+    .image-header-mobile{
+        display:none;
+    }
+
     .logo{
         position:absolute;
         top: 30px;
         left: 30px;
     }
 
-    .navigation{
+    .desktop-navigation{
         position: absolute;
         top:30px;
         right: 0;
@@ -40,8 +83,12 @@ header {
     h1.creatives-text{
         position: absolute;
         top: 25%;
-        left: 40%;
         color: white;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     .downwards-arrow{
@@ -53,6 +100,11 @@ header {
 }
 
 .row{
+
+    .image-transform-mobile, .photography-mobile, .graphic-design-mobile{
+        display:none;
+    }
+
     .col-md-6, .col-md-3 {
         padding: 0;
     }
@@ -89,7 +141,14 @@ header {
         position:absolute;
         bottom: 30%;
         left: 35%;
+        letter-spacing: 2px;position: absolute;
+        bottom: 30%;
         letter-spacing: 2px;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
     }
 
     h4.photography-title, p.photography-text{
@@ -187,4 +246,42 @@ header {
             }
         }
     }
+}
+@media (max-width: 720px) {
+   header{
+    .menu-btn-mobile, .image-header-mobile{
+        display: block;
+    }
+    .desktop-navigation, .image-header-desktop{
+        display:none;
+    }
+
+    .downwards-arrow{
+        top: 50%;
+    }
+
+    h1.creatives-text{
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        left: 10%;
+         padding: 0 40px;
+        color: white;
+    }
+   }
+
+   .row{
+    .image-transform-desktop, .photography-desktop, .graphic-design-desktop{
+        display:none;
+    }
+
+    .image-transform-mobile, .photography-mobile, .graphic-design-mobile{
+        display:block;
+    }
+
+    h4.graphic-design-title,  h4.photography-title
+    {
+        bottom: 35%;
+    }
+   }
 }

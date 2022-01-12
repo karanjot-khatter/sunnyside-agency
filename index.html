@@ -13,9 +13,15 @@
 <body style="background-color:#90d4c4">
 
     <header>
-        <img src="images/desktop/image-header.jpg" width="100%">
+        <img class="image-header-desktop" src="images/desktop/image-header.jpg" width="100%">
+        <img class="image-header-mobile" src="images/mobile/image-header.jpg" width="100%">
         <div class="logo"> <img src="images/logo.svg">  </div>
-        <div class="navigation">
+
+        <div class="menu-btn-mobile">
+            <span class="menu-btn-mobile_burger"</span>
+        </div>
+        
+        <div class="desktop-navigation">
             <ul>
                 <li><a href="">About</a></li>
                 <li><a href="">Services</a></li>
@@ -28,6 +34,11 @@
     </header>
 
     <div class="row">
+
+        <div class="col-md-6 image-transform-mobile">
+            <img src="images/mobile/image-transform.jpg" width="100%" height="100%">
+        </div>
+
         <div style="background-color:white;"class="col-md-6">
             <div class="image-text">
                 <h2>Transform your brand</h2>
@@ -36,8 +47,8 @@
             </div>
         </div>
 
-        <div class="col-md-6">
-            <img src="images/desktop/image-transform.jpg" width="100%" height="100%">
+        <div class="col-md-6 image-transform-desktop">
+            <img class="image-transform-desktop" src="images/desktop/image-transform.jpg" width="100%" height="100%">
         </div>
     </div>
 
@@ -58,7 +69,8 @@
     <div class="row">
         <div class="col-md-6">
             <div class="graphic-design">
-                <img src="images/desktop/image-graphic-design.jpg" width="100%">
+                <img class="graphic-design-desktop" src="images/desktop/image-graphic-design.jpg" width="100%">
+                <img class="graphic-design-mobile" src="images/mobile/image-graphic-design.jpg" width="100%">
                 <h4 class="graphic-design-title">Graphic design</h4> 
                 <p class="graphic-design-text">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential client's attention.</p>
             </div>
@@ -66,7 +78,8 @@
 
         <div class="col-md-6">
             <div class="photography">
-                <img src="images/desktop/image-photography.jpg" width="100%">
+                <img class="photography-desktop" src="images/desktop/image-photography.jpg" width="100%">
+                <img class="photography-mobile" src="images/mobile/image-photography.jpg" width="100%">
                 <h4 class="photography-title">Photography</h4>
                 <p class="photography-text">Increase your credibility by getting the most stunning, high-quality photos that improve your buisness image.</p>
             </div>
@@ -98,16 +111,16 @@
     </div>
 
     <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
             <img src="images/desktop/image-gallery-milkbottles.jpg" width="100%">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
             <img src="images/desktop/image-gallery-orange.jpg" width="100%">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
             <img src="images/desktop/image-gallery-cone.jpg" width="100%">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
             <img src="images/desktop/image-gallery-sugarcubes.jpg" width="100%">
         </div>
     </div>

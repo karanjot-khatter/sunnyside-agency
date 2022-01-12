@@ -1,21 +1,67 @@
+header {
+  position: relative;
+}
+
+header .menu-btn-mobile {
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  top: 30px;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+header .menu-btn-mobile_burger {
+  position: absolute;
+  right: 0;
+  top: 0.5rem;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+}
+
+header .menu-btn-mobile_burger::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+}
+
+header .menu-btn-mobile_burger::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+}
+
+header .image-header-mobile {
+  display: none;
+}
+
 header .logo {
   position: absolute;
   top: 30px;
   left: 30px;
 }
 
-header .navigation {
+header .desktop-navigation {
   position: absolute;
   top: 30px;
   right: 0;
 }
 
-header .navigation ul li {
+header .desktop-navigation ul li {
   display: inline;
   margin-right: 30px;
 }
 
-header .navigation ul li button {
+header .desktop-navigation ul li button {
   border: 0;
   background-color: white;
   border-radius: 20px;
@@ -23,12 +69,12 @@ header .navigation ul li button {
   width: 100px;
 }
 
-header .navigation ul li button:hover {
+header .desktop-navigation ul li button:hover {
   background-color: #6FCFFF;
   color: white;
 }
 
-header .navigation ul li a {
+header .desktop-navigation ul li a {
   color: white;
   text-decoration: none;
 }
@@ -36,8 +82,12 @@ header .navigation ul li a {
 header h1.creatives-text {
   position: absolute;
   top: 25%;
-  left: 40%;
   color: white;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 header .downwards-arrow {
@@ -45,6 +95,10 @@ header .downwards-arrow {
   top: 45%;
   left: 50%;
   color: white;
+}
+
+.row .image-transform-mobile, .row .photography-mobile, .row .graphic-design-mobile {
+  display: none;
 }
 
 .row .col-md-6, .row .col-md-3 {
@@ -85,6 +139,14 @@ header .downwards-arrow {
   bottom: 30%;
   left: 35%;
   letter-spacing: 2px;
+  position: absolute;
+  bottom: 30%;
+  letter-spacing: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
 .row h4.photography-title, .row p.photography-text {
@@ -179,5 +241,34 @@ header .downwards-arrow {
 .footer ul li img:hover {
   cursor: pointer;
   background-color: white;
+}
+
+@media (max-width: 720px) {
+  header .menu-btn-mobile, header .image-header-mobile {
+    display: block;
+  }
+  header .desktop-navigation, header .image-header-desktop {
+    display: none;
+  }
+  header .downwards-arrow {
+    top: 50%;
+  }
+  header h1.creatives-text {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    left: 10%;
+    padding: 0 40px;
+    color: white;
+  }
+  .row .image-transform-desktop, .row .photography-desktop, .row .graphic-design-desktop {
+    display: none;
+  }
+  .row .image-transform-mobile, .row .photography-mobile, .row .graphic-design-mobile {
+    display: block;
+  }
+  .row h4.graphic-design-title, .row h4.photography-title {
+    bottom: 35%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
